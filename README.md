@@ -1,6 +1,14 @@
 # Downloader
 
-TODO: Write a gem description
+
+# Create
+
+##### Create basic application structure
+    
+    bundle gem downloader
+
+##### Add Spec 
+    rspec --init
 
 ## Installation
 
