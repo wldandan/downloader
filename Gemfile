@@ -8,6 +8,3 @@ group :development, :test do
   gem 'rspec'
   gem 'pry'
 end
-
-# Specify your gem's dependencies in downloader.gemspec
-gemspec
