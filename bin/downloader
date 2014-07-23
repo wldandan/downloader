@@ -12,9 +12,8 @@ class Download < Thor
 
   desc 'itpub [URL]', 'download it books from itpub.net'
   long_desc <<-LONGDESC
-    > $ ./downloader
+    > $ ./downloader itpub [URL]
   LONGDESC
-
 
   def itpub(url)
     itpub_downloader = Downloader::ITPub.new 
