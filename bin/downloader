@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+$: << File.expand_path('../../lib', __FILE__)
+require 'rubygems'
+require 'bundler/setup'
+require 'thor'
+require '../lib/downloader'
+
+class Download < Thor
+
+  desc 'itpub [URL]', 'download it books from itpub.net'
+  long_desc <<-LONGDESC
+    > $ ./downloader
+  LONGDESC
+
+
+  def itpub(url)
+    itpub_downloader = Downloader::ITPub.new 
+    itpub_downloader.execute(url)
+  end
+
+end
+
+Download.start
