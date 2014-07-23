@@ -1,0 +1,23 @@
+PATH
+  remote: .
+  specs:
+    downloader (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    httpclient (2.4.0)
+    mini_portile (0.6.0)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
+    rake (10.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.5)
+  downloader!
+  httpclient (~> 2.4.0)
+  nokogiri (= 1.6.3.1)
+  rake
